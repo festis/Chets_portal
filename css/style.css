@@ -1,0 +1,22 @@
+body {
+    margin-top: 3em;
+}
+
+.clear {
+    clear: both;
+}
+
+/* For changing the background color of the zebra striping */
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+   background-color: #e3f1f7;
+ }
+ 
+.divider {
+    height: 1px;
+    width:100%;
+    display:block; /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}

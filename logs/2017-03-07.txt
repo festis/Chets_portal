@@ -1,0 +1,153 @@
+[07-Mar-2017 03:43:35 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 03:44:33 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('bacon')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 21:38:20 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('product')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 21:44:11 UTC] Uncaught exception: 'ErrorException' with message 'include(../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../comp...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:44:34 UTC] Uncaught exception: 'ErrorException' with message 'include(../../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../../c...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:45:39 UTC] Uncaught exception: 'ErrorException' with message 'include(components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(compone...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:46:48 UTC] Uncaught exception: 'ErrorException' with message 'include(/components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(/compon...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:46:57 UTC] Uncaught exception: 'ErrorException' with message 'include(../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../comp...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:47:07 UTC] Uncaught exception: 'ErrorException' with message 'include(../../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../../c...', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:47:16 UTC] Uncaught exception: 'ErrorException' with message 'include(../../../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../../....', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:47:30 UTC] Uncaught exception: 'ErrorException' with message 'include(../../../../components/header.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): Core\Error::errorHandler(2, 'include(../../....', 'C:\\wamp64\\www\\l...', 1, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(1): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 1
+[07-Mar-2017 21:48:23 UTC] Uncaught exception: 'ErrorException' with message 'include(../../../../components/footer.php): failed to open stream: No such file or directory'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(10): Core\Error::errorHandler(2, 'include(../../....', 'C:\\wamp64\\www\\l...', 10, Array)
+#1 C:\wamp64\www\liquidpixel\App\Views\Home\index.php(10): include()
+#2 C:\wamp64\www\liquidpixel\Core\View.php(25): require('C:\\wamp64\\www\\l...')
+#3 C:\wamp64\www\liquidpixel\App\Controllers\Home.php(40): Core\View::render('Home/index.php', Array)
+#4 [internal function]: App\Controllers\Home->indexAction(Array)
+#5 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('index', Array)
+#7 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Home->index()
+#8 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('')
+#9 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Views\Home\index.php' on line 10
+[07-Mar-2017 21:51:38 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 21:52:27 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 21:52:27 UTC] PHP Fatal error:  Uncaught exception 'ErrorException' with message 'Use of undefined constant php - assumed 'php'' in C:\wamp64\www\liquidpixel\Core\Error.php:59
+Stack trace:
+#0 C:\wamp64\www\liquidpixel\Core\Error.php(59): Core\Error::errorHandler(8, 'Use of undefine...', 'C:\\wamp64\\www\\l...', 59, Array)
+#1 [internal function]: Core\Error::exceptionHandler(Object(Exception))
+#2 {main}
+  thrown in C:\wamp64\www\liquidpixel\Core\Error.php on line 59
+[07-Mar-2017 21:52:45 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 22:26:50 UTC] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('products')
+#1 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\Core\Router.php' on line 121
+[07-Mar-2017 23:58:52 UTC] Uncaught exception: 'ErrorException' with message 'Undefined property: App\Models\User::$store_number'
+Stack trace: #0 C:\wamp64\www\liquidpixel\App\Models\User.php(111): Core\Error::errorHandler(8, 'Undefined prope...', 'C:\\wamp64\\www\\l...', 111, Array)
+#1 C:\wamp64\www\liquidpixel\App\Models\User.php(52): App\Models\User->validate()
+#2 C:\wamp64\www\liquidpixel\App\Controllers\Signup.php(31): App\Models\User->save()
+#3 [internal function]: App\Controllers\Signup->createAction(Array)
+#4 C:\wamp64\www\liquidpixel\Core\Controller.php(33): call_user_func(Array, Array)
+#5 C:\wamp64\www\liquidpixel\Core\Router.php(113): Core\Controller->__call('create', Array)
+#6 C:\wamp64\www\liquidpixel\Core\Router.php(113): App\Controllers\Signup->create()
+#7 C:\wamp64\www\liquidpixel\public\index.php(48): Core\Router->dispatch('signup/create')
+#8 {main}
+Thrown in 'C:\wamp64\www\liquidpixel\App\Models\User.php' on line 111

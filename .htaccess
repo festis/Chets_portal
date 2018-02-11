@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /apps
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-l 
+RewriteRule ^(.*)$ /apps/index.php?$1 [L,QSA]
