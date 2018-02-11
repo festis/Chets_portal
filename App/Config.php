@@ -47,7 +47,7 @@ class Config
      * 
      * $var string
      */
-    const SITE_NAME = 'apps';
+    const SITE_NAME = '';
     
     /**
      * Email From Name
@@ -55,7 +55,7 @@ class Config
      * 
      * @var string Email name
      */
-    const EMAIL_NAME = "Chet's Rentall";
+    const EMAIL_NAME = "";
     
     /**
      * Database host
@@ -63,28 +63,28 @@ class Config
      * 
      * @var string
      */
-    const DB_HOST = 'localhost';
+    const DB_HOST = '';
     
     /**
      * Database name
      * 
      * @var string
      */
-    const DB_NAME = 'chetsren_superapp';
+    const DB_NAME = '';
     
     /**
      * Database user
      * 
      * @var string
      */
-    const DB_USER = 'chetsren_superap';
+    const DB_USER = '';
     
     /**
      * Database Password
      * 
      * @var string
      */
-    const DB_PASSWORD = 'chets_2016';
+    const DB_PASSWORD = '';
     
     /**
      * Show or hide errors on screen
@@ -98,7 +98,7 @@ class Config
      * 
      * @var string
      */
-    const SECRET_KEY = '0vhcvP0iQaYfL76PTRt1L3SSP9Vav2i9';
+    const SECRET_KEY = '';
     
     /**
      * Email username
@@ -106,14 +106,14 @@ class Config
      * 
      * @var string
      */
-    const EMAIL_USER = 'chets.purchasing@gmail.com';
+    const EMAIL_USER = '';
     
     /**
      * Email Password
      * 
      * @var string
      */
-    const EMAIL_PASS = 'chets123';
+    const EMAIL_PASS = '';
     
     public function __construct() {
         // Get module names for navigation
