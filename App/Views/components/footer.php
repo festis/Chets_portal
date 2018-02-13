@@ -5,6 +5,7 @@
 <script type="text/javascript" src="<?php echo HTTP ?>/js/hideShowPassword.min.js"></script>
 <script type="text/javascript" src="<?php echo HTTP ?>/js/tablesorter.min.js"></script>
 <script type="text/javascript" src="<?php echo HTTP ?>/js/app.js"></script>
+<script type="text/javascript" src="<?php echo HTTP ?>/js/hideFields.js"></script>
 
 <script>
     $(document).ready(function() {

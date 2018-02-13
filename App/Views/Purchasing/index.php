@@ -94,6 +94,10 @@
                 echo '<input type="checkbox" id="add_SOR" name="add_SOR" value="1">   Add To the Suggested Order Report?<br />';
                 }
                 ?>
+                <input type="hidden" name="return" value="0" >
+                <input type="checkbox" id="return" name="return" value="1" onclick="hideField()" /> Is this a return?<br />
+                <input class="form-control" type="text" style="display:none" id="oldPO" name="oldPO" placeholder="Enter the Original P.O." value="null" required /><br />
+
             </div>
             <hr class="col-md-12 divider" style="margin-left: -15px" />
             <div class="col-md-12 table-responsive">
