@@ -41,7 +41,7 @@ class Purchasing_m extends \Core\Model
                 
                 //Testing addresses
             //$to = 'jgransden@chetsrentall.com';
-        	    // $cc[] = 'dgransden@chetsrentall.com';
+        	//$cc[] = 'dgransden@chetsrentall.com';
         	break;
         default :
             // Live address
@@ -65,7 +65,13 @@ class Purchasing_m extends \Core\Model
         }        
         // Build the HTML version of the email
         $partCount = count($data['partNum']);
-        $msgHeader = '<b>Store: &emsp;</b>' . $storeForm . '<br />';
+        if ($data['return'] == '1'){
+            $msgHeader = '<h1 style="color:red;">THIS IS A RETURN</h1><br />';
+        }
+        else{
+            $msgHeader = '';
+        }
+        $msgHeader .= '<b>Store: &emsp;</b>' . $storeForm . '<br />';
         $msgHeader .= '<b>Store address: &emsp;</b>' . 'Chet&#39;s Rent All - ' . $storeAddress . '<br />';
         $msgHeader .= '<b>Requestor: &emsp;</b>' . $data['requestor'] .'<br />';
         $msgHeader .= '<b>Work Order Number: &emsp;</b>' . $data['workOrder'] . '<br />';
@@ -75,6 +81,10 @@ class Purchasing_m extends \Core\Model
         $msgHeader .= '<b>Date Needed: &emsp;</b>' . $data['date'] . '<br />';
         $msgHeader .= '<b>Date Ordered: &emsp;</b>' . date(DATE_RFC2822) . '<br />';
         $msgHeader .= "<b>Request Type: &emsp;</b>" . $data['requestType'] . '<br />';
+        if ($data['return'] == '1'){
+            $msgHeader .= "<b>Original P.O.: &emsp;</b>" . $data['oldPO'] . '<br />';
+            $msgHeader .= '<h1 style="color:red;">THIS IS A RETURN</h1><br />';
+        }
 
 
 
@@ -103,6 +113,9 @@ class Purchasing_m extends \Core\Model
         
         // Build the text version of the email incase HTML is blocked
         $textHeader = "This message looks better if you enable HTML emails \r\n";
+        if ($data['return'] == "1"){
+            $textHeader .= "!!! THIS IS A RETURN !!! \r\n";
+        }
         $textHeader .= "Store: " . $storeForm . "\r\n";
         $textHeader .= 'Store address: Chet\'s Rent All - ' . $storeAddress. "\r\n";
         $textHeader .= 'Requestor: ' . $data['requestor'] . "\r\n";
@@ -113,6 +126,10 @@ class Purchasing_m extends \Core\Model
         $textHeader .= 'Date ordered: ' . date(DATE_RFC2822) . "\r\n";
         $textHeader .= 'Date needed: ' . $data['date'] . "\r\n";
         $textHeader .= 'Request Type: ' . $data['requestType'] . "\r\n";
+        if ($data['return'] == '1'){
+            $textHeader .= "Original P.O.: " . $data['oldPO'] . "\r\n";
+            $textHeader .= "!! THIS IS A RETURN !!! \r\n";
+        }
 
         //Added on 07-12-2017 for the Suggested Order Report
         if ($user->is_storeManager and ($data['requestType'] == 'parts' or $data['requestType']== 'saleable')){
@@ -120,6 +137,7 @@ class Purchasing_m extends \Core\Model
                 $textHeader .= 'Add to Suggested Order Report: ' . "Yes" . "\r\n";
             }
         }
+        $textHeader .= "!!! THIS IS A RETURN !!! \r\n";
 
 
         $textFooter = 'Comments: ' . $data['comments'] . "\r\n";
@@ -134,8 +152,12 @@ class Purchasing_m extends \Core\Model
             $textBody.= strtoupper($data['quantity'][$i]) . ' ';
             $textBody.= strtoupper($data['unit'][$i]) .  ' ';
         }
-
-        $subject = 'New Purchase Request';
+        if ($data['return'] == '1'){
+            $subject = 'RETURN Request';
+        }
+        else {
+            $subject = 'New Purchase Request';
+        }
         $text = $textHeader . $textBody . $textFooter;
         $html = $msgHeader . $msg . $msgFooter;
 
@@ -165,7 +187,8 @@ class Purchasing_m extends \Core\Model
                             date_required,
                             work_order, 
                             comments,
-                            add_SOR) 
+                            add_SOR,
+                            itemReturn) 
                         VALUES (
                             :store, 
                             :requestor, 
@@ -177,7 +200,8 @@ class Purchasing_m extends \Core\Model
                             :date_required, 
                             :work_order, 
                             :comments,
-                            :add_SOR)";
+                            :add_SOR,
+                            :itemReturn)";
         
         $db = static::getDB();
         $storeForm = ucfirst(preg_replace( "/[^a-z]/i", "", $data['fromStore']));
@@ -200,6 +224,7 @@ class Purchasing_m extends \Core\Model
         else{
             $stmt->bindValue(':add_SOR', 0);
         }
+        $stmt->bindValue(':itemReturn',     $data['return'] );
         $stmt->execute();
         
         // We will need the record number of the what we just inserted
