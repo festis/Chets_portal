@@ -10,7 +10,7 @@
         </ul>
         
         <ul class="nav navbar-nav navbar-right"> 
-            <li> <a href="/<?php echo \App\Config::SITE_NAME ?>/modules/runboard/addrun"><button class="btn btn-success" style="margin: -8px 0 -8px 0">Add run</button> </a></li>              
+            <li> <a href="/<?php echo \App\Config::SITE_NAME ?>/modules/runboard/addrun"><button class="btn btn-success" style="margin: -8px 0 -8px 0">Add run</button> </a></li>
         </ul>
     </div>
 </nav>

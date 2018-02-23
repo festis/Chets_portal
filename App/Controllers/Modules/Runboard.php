@@ -245,8 +245,11 @@ class Runboard extends \App\Controllers\Authenticated
      * @return void
      */
     public function deleteAction() {
-        if (isset($_POST['trans'])) {
-            $id = $_POST['trans'];
+        if (isset($_POST['delete'])) {
+            
+            //$id = $_POST['trans'];
+            $id = isset($_POST['checkbox']);
+            
             if (Runboard_m::delete($id)) {
                 Flash::addMessage('Deletion sccessful', Flash::SUCCESS);
             } else {

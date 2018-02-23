@@ -9,6 +9,10 @@
                             <td><a href="/<?php echo \App\Config::SITE_NAME ?>/modules/runboard/<?php echo $run['transID'] ?>/edit"><?php echo $run['itemStatus']; ?></a></td>
                             <td><a href="/<?php echo \App\Config::SITE_NAME ?>/modules/runboard/<?php echo $run['transID'] ?>/edit"><?php echo $run['notes']; ?></a></td>
                             <td>
-                                <form action="/<?php echo \App\Config::SITE_NAME; ?>/modules/runboard/delete" method="POST" onclick="return confirm('Are you sure?');"><input type="hidden" name="trans" value="<?php echo $run['transID'] ?>"><button type="submit" class="btn btn-danger btn-sm" id="delete">Delete</button></form>
+                                <input type="checkbox" id="checkbox" name="checkbox[]" value="<?php echo $run['transID'] ?>" />
+                                <!-- 
+                                    
+                                    <form action="/<?php echo \App\Config::SITE_NAME; ?>/modules/runboard/delete" method="POST" onclick="return confirm('Are you sure?');"><input type="hidden" name="trans" value="<?php echo $run['transID'] ?>"><button type="submit" class="btn btn-danger btn-sm" id="delete">Delete</button></form>
+                                -->
                             </td>
                         </tr>

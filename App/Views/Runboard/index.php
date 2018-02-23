@@ -1,5 +1,6 @@
 <?php $title = 'Runboard'; ?>
 <?php include 'App/Views/components/header.php'; ?>
+<form action="/<?php echo \App\Config::SITE_NAME; ?>/modules/runboard/delete" method="POST">
 <?php include 'runboard_nav.php'; ?>
         <?php if (!empty($rental)): ?>
         <h2><?php echo $username; ?>&#8217;s Rental Runs</h2>
@@ -85,5 +86,6 @@
             </table>
         </div>
         <?php endif; ?>
+</form>
         
 <?php include 'App/Views/components/footer.php'; ?>

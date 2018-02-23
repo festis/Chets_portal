@@ -31,7 +31,9 @@ class Runboard_m extends \Core\Model
      * 
      * @return void
      */
-    public static function delete($id) {
+    public static function delete($id) {        
+        var_dump($id);
+        exit();
         $sql = 'DELETE FROM runboard WHERE transID = :id LIMIT 1';
         
         $db = static::getDB();        

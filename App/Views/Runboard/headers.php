@@ -8,5 +8,5 @@
                         <th>Time Needed</th>
                         <th>Item Status</th>
                         <th>Notes</th>
-                        <th>Action</th>
+                        <th><button type="submit" onclick="return confirm('Are you sure?');" class="btn btn-danger" style="margin: 8px 0px 0" id="delete" name="delete">Delete</button></th>
                     </tr>
